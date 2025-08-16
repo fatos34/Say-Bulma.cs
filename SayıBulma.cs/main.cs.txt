@@ -1,0 +1,20 @@
+using System;
+
+static void Main(string[] args)
+{
+  Random a= new Random();
+  int num=a.Next(1,100);
+  int guess;
+  Console.WriteLine("sayı bulma oyunu");
+  while(true)
+  {
+      Console.Write("tahmin gir");
+      guess=Convert.ToInt32(Console.ReadLine());
+      if(guess<num){Console.Write("yukarı sayı girin:");
+  }
+  else if(guess>num){Console.Write("yukarı sayı girin:");
+  }
+  else{Console.Write("tebrikler doğru tahmin:");break;
+  }
+}
+}
